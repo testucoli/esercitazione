@@ -18,7 +18,7 @@ public class Studente {
     }//costruttore
 
 
-    public void Inserimento(){
+    public void inserimento(){
         Scanner input = new Scanner(System.in);
         System.out.println("quanti voti vuoi inserire: ");
         int n = input.nextInt();
@@ -47,7 +47,7 @@ public class Studente {
     }
 
 
-    public Float Media(){
+    public Float media(){
         float somma = 0;
         float media;
 
@@ -59,16 +59,19 @@ public class Studente {
         return media;
         }
 
-    public Integer Maggiore(){
+    public Integer maggiore(){
         int Max = voti[0];
         int n=voti.length;
-        for(int i=0; i < n; i++){
+        for(int i=1; i < n; i++){
             if(voti[i] > Max){
                 Max = voti[i];
             }
         }
         return Max;
     }
+
+
+
 
     }
 
